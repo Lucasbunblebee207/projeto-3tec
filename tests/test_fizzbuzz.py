@@ -1,5 +1,5 @@
 from app.app import create_app
-from fizzbuzz import fizzbuzz
+from app.fizzbuzz.fizzbuzz import fizzbuzz
 
 flask_app = create_app()
 
@@ -17,4 +17,4 @@ def test_fizzbuzz():
 
 def test_fizzbuzz():
     res = fizzbuzz(1)
-    assert res == '1'
+    assert res == 1
